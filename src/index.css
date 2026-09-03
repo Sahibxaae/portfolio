@@ -11,6 +11,7 @@
   --font-code: 'Google Sans Code', monospace;
   --color-text-bw:#E5E2E1;
   --animate-slideDown: slideDown 0.3s ease-out;
+  --color-text-gray:#878686;
 
   @keyframes slideDown {
     from {
