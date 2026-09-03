@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar'
-import Icon from '../src/assets/code.png'
+import Icon from '../src/assets/icon.png'
 import './App.css'
 
 function App() {

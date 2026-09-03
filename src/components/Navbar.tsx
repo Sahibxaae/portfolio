@@ -1,17 +1,18 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 type NavbarProps = {
   icon: string;
 };
 const Navbar = ({ icon }: NavbarProps) => {
   const navItems = ["HOME", "EXPERIENCE", "ABOUT", "STACK", "CONTACT"];
-  const [menuOpen,setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-bg-nav text-text-main flex justify-between items-center h-[110px] px-5 w-full">
+    <nav className="bg-bg-nav text-text-bw flex justify-between items-center h-[110px] px-5 w-full">
       <div className="flex gap-4 w-[329px]">
-        <img src={icon} alt="" className="w-8.75 h-8" />
-        <h2 className="font-bold text-text-header text-2xl">
+        <img src={icon} alt="" className="w-10.75 h-8" />
+        <h2 className="font-bold text-text-header text-2xl font-geist">
           <TypeAnimation
             sequence={[
               "Mohamed Sahib",
@@ -40,7 +41,13 @@ const Navbar = ({ icon }: NavbarProps) => {
       </div>
       <ul className=" hidden lg:flex gap-6.5 text-sm font-thin">
         {navItems.map((item, idx) => (
-          <li key={idx}>{item}</li>
+          <li key={idx} className="font-light">
+            {" "}
+            <NavLink to={"/"} className={({ isActive }) =>
+    isActive
+      ? "underline underline-offset-5 decoration-2 decoration-bg-blu"
+      : ""}>{item}</NavLink>
+          </li>
         ))}
       </ul>
 
@@ -51,30 +58,31 @@ const Navbar = ({ icon }: NavbarProps) => {
       </div>
 
       {/* Hamburger */}
-      <button onClick={()=>setMenuOpen(!menuOpen)} className="lg:hidden flex flex-col gap-2 ml-auto">
-         <span
-            className={`block w-6 h-0.5 bg-text-main transition-transform duration-300 ${
-              menuOpen ? "translate-y-2 rotate-45" : ""
-            }`}
-          />
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="lg:hidden flex flex-col gap-2 ml-auto"
+      >
+        <span
+          className={`block w-6 h-0.5 bg-text-main transition-transform duration-300 ${
+            menuOpen ? "translate-y-2 rotate-45" : ""
+          }`}
+        />
 
-          <span
-            className={`block w-6 h-0.5 bg-text-main transition-opacity duration-300 ${
-              menuOpen ? "opacity-0" : ""
-            }`}
-          />
+        <span
+          className={`block w-6 h-0.5 bg-text-main transition-opacity duration-300 ${
+            menuOpen ? "opacity-0" : ""
+          }`}
+        />
 
-          <span
-            className={`block w-6 h-0.5 bg-text-main transition-transform duration-300 ${
-              menuOpen ? "-translate-y-2 -rotate-45" : ""
-            }`}
-          />  
+        <span
+          className={`block w-6 h-0.5 bg-text-main transition-transform duration-300 ${
+            menuOpen ? "-translate-y-2 -rotate-45" : ""
+          }`}
+        />
       </button>
       {/* mobile menu */}
 
-      <div>
-        
-      </div>
+      <div></div>
     </nav>
   );
 };
