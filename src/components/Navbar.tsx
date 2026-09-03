@@ -9,9 +9,9 @@ const Navbar = ({ icon }: NavbarProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-bg-nav text-text-bw flex justify-between items-center h-[110px] px-5 w-full">
-      <div className="flex gap-4 w-[329px]">
-        <img src={icon} alt="" className="w-10.75 h-8" />
+    <nav className="bg-bg-nav text-text-bw flex justify-between items-center h-21.25 px-5 w-full">
+      <div className="flex gap-4 w-82.25 items-center">
+        <img src={icon} alt="" className="w-9.75 h-7" />
         <h2 className="font-bold text-text-header text-2xl font-geist">
           <TypeAnimation
             sequence={[
