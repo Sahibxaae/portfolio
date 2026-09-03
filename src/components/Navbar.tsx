@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 type NavbarProps = {
   icon: string;
