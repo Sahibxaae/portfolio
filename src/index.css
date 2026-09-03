@@ -10,7 +10,21 @@
  --color-bg-blu:#3B82F6;
   --font-code: 'Google Sans Code', monospace;
   --color-text-bw:#E5E2E1;
+  --animate-slideDown: slideDown 0.3s ease-out;
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
+
 @layer base {
   body {
     font-family: var(--font-sans);
