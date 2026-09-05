@@ -40,7 +40,7 @@ export const PipelineSection: React.FC = () => {
             <span>04 // DEPLOYMENT PIPELINE</span>
             <div className="h-[1px] w-12 bg-[#00F0FF]/40" />
           </div>
-          <h2 className="font-display font-black text-4xl sm:text-6xl text-white uppercase tracking-tight leading-none">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white uppercase tracking-tight leading-tight">
             FROM LOCALHOST <br />
             <span className="text-[#00F0FF]">TO PRODUCTION.</span>
           </h2>

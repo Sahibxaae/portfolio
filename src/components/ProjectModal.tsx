@@ -55,7 +55,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
         {/* Title & Subtitle */}
         <div className="mb-10">
-          <h2 className="font-display font-black text-4xl sm:text-6xl text-white tracking-tight uppercase mb-4">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight uppercase mb-4">
             {project.title}
           </h2>
           <p className="text-xl text-white/70 font-light max-w-3xl leading-relaxed">
