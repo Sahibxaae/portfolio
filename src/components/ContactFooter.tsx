@@ -112,6 +112,9 @@ export const ContactFooter: React.FC<ContactFooterProps> = ({ playAudioClick }) 
           <span>FULL-STACK SOFTWARE DEVELOPER</span>
         </div>
 
+        <div className="text-center sm:text-right text-white/40">
+          &copy;2026 COPYRIGHTS ALL RIGHTS RESERVED.
+        </div>
         <div className="text-center sm:text-right text-[#00F0FF]">
           "DESIGNED, BUILT & SHIPPED WITH CURIOSITY."
         </div>

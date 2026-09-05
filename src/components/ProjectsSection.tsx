@@ -46,7 +46,7 @@ export const projectsData: Project[] = [
     subtitle: 'CLOUD INFRASTRUCTURE & MAIL ROUTING',
     category: 'GOOGLE CLOUD PLATFORM & ENTERPRISE MAIL',
     transitionTag: '02 / INFRASTRUCTURE',
-    editorialHeadline: 'MANAGED GCP ALONE AS INTERN.',
+    editorialHeadline: 'MANAGED GCP AS INTERN.',
     description: 'Single-handedly managed ParkQwik\'s entire Google Cloud Platform (GCP) infrastructure, deployed web applications, and configured enterprise mail routing.',
     technologies: ['GOOGLE CLOUD PLATFORM', 'GCP CLOUD RUN', 'GCP CLOUD DNS', 'MAIL ROUTING', 'MX / SPF / DKIM', 'SSL INFRASTRUCTURE'],
     technicalLayers: [
