@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, Copy, Check, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowUpRight, Copy, Check, MapPin, Shield } from 'lucide-react';
 
 interface ContactFooterProps {
   playAudioClick: () => void;
@@ -106,10 +107,25 @@ export const ContactFooter: React.FC<ContactFooterProps> = ({ playAudioClick }) 
 
       {/* Minimal Signature Footer */}
       <div className="flex flex-col sm:flex-row items-center justify-between font-mono-tech text-xs text-white/40 gap-4 pt-4">
-        <div>
-          <span className="text-white font-bold">MOHAMED SAHIB A</span>
-          <span className="mx-2">•</span>
+        <div className="flex items-center gap-2">
+          <Link
+            to="/login"
+            onClick={() => playAudioClick()}
+            title="Click to open Admin Gateway / Login"
+            className="text-white hover:text-[#00F0FF] font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 group border-b border-transparent hover:border-[#00F0FF]"
+          >
+            <span>MOHAMED SAHIB A</span>
+            <Shield size={12} className="text-[#00F0FF] opacity-0 group-hover:opacity-100 transition-opacity" />
+          </Link>
+          <span className="mx-1">•</span>
           <span>FULL-STACK SOFTWARE DEVELOPER</span>
+          <Link
+            to="/login"
+            onClick={() => playAudioClick()}
+            className="ml-2 text-[10px] text-[#00F0FF] bg-[#00F0FF]/10 hover:bg-[#00F0FF]/20 border border-[#00F0FF]/30 px-1.5 py-0.5 rounded transition-all"
+          >
+            LOGIN
+          </Link>
         </div>
 
         <div className="text-center sm:text-right text-white/40">
